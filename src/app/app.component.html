@@ -1,6 +1,7 @@
-<div class="jumbotron">
-  <h1>{{title}}</h1>
-</div>
-
-<app-movie></app-movie>
+<h1 class="jumbotron">{{title}}</h1>
+<nav>
+  <a type="button" class="btn btn-primary" routerLink="/dashboard">Dashboard</a>
+  <a type="button" class="btn btn-primary" routerLink="/movies">Movies</a>
+</nav>
+<router-outlet></router-outlet>
 <app-messages></app-messages>

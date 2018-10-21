@@ -9,19 +9,23 @@ import { MovieComponent } from './movie/movie.component';
 import { PapaParseModule } from 'ngx-papaparse';
 import { MovieDetailComponent } from './movie-detail/movie-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { AppRoutingModule } from './app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
     MovieDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    DashboardComponent
     // PapaParseModule
   ],
   imports: [
     BrowserModule,
     // NgbModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
