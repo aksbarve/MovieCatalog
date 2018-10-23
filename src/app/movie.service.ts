@@ -14,5 +14,11 @@ export class MovieService {
   getMovies(): Observable<Movie[]> {
     this.messageService.add('MovieService: fetched movies');
     return of(MOVIES);
-  }
+
+}
+
+getMovie(id: number): Observable<Movie> {
+  this.messageService.add(`MovieService: fetched movie id=${id}`);
+  return of(MOVIES.find(movie => movie.id === id));
+}
 }
